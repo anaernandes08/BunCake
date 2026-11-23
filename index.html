@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+     <link rel="icon" type="image/png" href="Imagens/LogoBunCake.png">
+    <title>BunCake</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="brand">
+                <img src="Imagens/LogoBunCake.png" alt="Logo BunCake" class="logo">
+                <h1>BunCake</h1>
+            </div>
+
+            <ul id="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#cardapio">Cardápio</a></li>
+                <li><a href="index.html#acessibilidade">Acessibilidade</a></li>
+            </ul>
+
+            <a href="carrinho.html" class="bnt bnt-default">🛒 Carrinho (<span id="cnt">0</span>)</a>
+            <a href="contato.html" class="bnt bnt-rosa">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <span class="tag">Site de teste</span>
+            <h1>Bem-vindo à BunCake 🍰</h1>
+            <p>Este é um site de teste, criado como projeto de estudo. Os produtos, preços e pedidos são fictícios e nada aqui é vendido de verdade.</p>
+        </section>
+
+        <section id="cardapio">
+            <h2>Cardápio</h2>
+            <div class="grid" id="menu"></div>
+        </section>
+
+        <section id="acessibilidade">
+            <h2>Acessibilidade</h2>
+            <p>Personalize o site para ficar mais confortável de ler e navegar.</p>
+            <div class="acc">
+                <div class="opt"><span class="ic">🔠</span><h3>Tamanho da fonte</h3>
+                    <div class="ctl">
+                        <button onclick="mudarFonte(-10)" aria-label="Diminuir fonte">A−</button>
+                        <span class="lvl" id="lvl">100%</span>
+                        <button onclick="mudarFonte(10)" aria-label="Aumentar fonte">A+</button>
+                    </div></div>
+                <div class="opt"><span class="ic">🌙</span><h3>Modo escuro</h3><button data-acc="dark" onclick="alternar('dark')">Ativar / desativar</button></div>
+                <div class="opt"><span class="ic">◐</span><h3>Alto contraste</h3><button data-acc="contrast" onclick="alternar('contrast')">Ativar / desativar</button></div>
+                <div class="opt"><span class="ic">↔️</span><h3>Espaçamento do texto</h3><button data-acc="spacing" onclick="alternar('spacing')">Ativar / desativar</button></div>
+                <div class="opt"><span class="ic">📖</span><h3>Fonte de fácil leitura</h3><button data-acc="readable" onclick="alternar('readable')">Ativar / desativar</button></div>
+                <div class="opt"><span class="ic">🔗</span><h3>Destacar links</h3><button data-acc="links" onclick="alternar('links')">Ativar / desativar</button></div>
+                <div class="opt"><span class="ic">🎞️</span><h3>Escala de cinza</h3><button data-acc="gray" onclick="alternar('gray')">Ativar / desativar</button></div>
+            </div>
+            <button class="reset" onclick="restaurar()">↺ Restaurar padrão</button>
+        </section>
+    </main>
+
+    <footer>© BunCake – site de teste, sem fins comerciais</footer>
+    <script src="script.js"></script>
+</body>
+</html>

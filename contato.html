@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BunCake – Contato</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="brand">
+                <img src="Imagens/LogoBunCake.png" alt="Logo BunCake" class="logo">
+                <h1>BunCake</h1>
+            </div>
+
+            <ul id="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#cardapio">Cardápio</a></li>
+                <li><a href="index.html#acessibilidade">Acessibilidade</a></li>
+            </ul>
+
+            <a href="carrinho.html" class="bnt bnt-default">🛒 Carrinho (<span id="cnt">0</span>)</a>
+            <a href="contato.html" class="bnt bnt-rosa">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="centro">
+            <h2>Contato</h2>
+            <p style="margin-bottom:14px">Envie sua mensagem (formulário de demonstração).</p>
+            <form onsubmit="enviarContato(event)">
+                <input required placeholder="Seu nome" aria-label="Nome">
+                <input required type="email" placeholder="Seu e-mail" aria-label="E-mail">
+                <textarea required rows="5" placeholder="Sua mensagem" aria-label="Mensagem"></textarea>
+                <button class="bnt bnt-default" type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>© BunCake – site de teste, sem fins comerciais</footer>
+    <script src="script.js"></script>
+</body>
+</html>
