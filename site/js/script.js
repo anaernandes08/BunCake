@@ -1,6 +1,7 @@
 /* ===== BunCake - script.js ===== */
 
 // Produtos do cardápio (preços fictícios)
+
 const PRODUTOS = [
   { id: 1, nome: "Ninho com Coco",    img: "Imagens/bolo-ninho-coco.jpg",     preco: 12, desc: "Bolo de chocolate, creme de leite ninho e coco ralado." },
   { id: 2, nome: "Chocolate Crocante", img: "Imagens/bolo-chocolate.jpg",      preco: 14, desc: "Mousse de chocolate, brigadeiro, creme e lascas de chocolate." },
@@ -14,8 +15,8 @@ const $ = (id) => document.getElementById(id);
 const reais = (v) => "R$ " + v.toFixed(2).replace(".", ",");
 
 
-/* ---------- Armazenamento (funciona mesmo abrindo o arquivo direto no PC) ----------
-   Guarda em window.name (persiste entre páginas na mesma aba) e também no localStorage. */
+/* ---------- Armazenamento ----------*/
+
 function lerDado(chave, padrao) {
   try {
     const w = JSON.parse(window.name);
@@ -40,6 +41,7 @@ function guardarDado(chave, valor) {
 }
 
 /* ---------- Aviso (toast) ---------- */
+
 function aviso(texto) {
   let t = $("toast");
   if (!t) { t = document.createElement("div"); t.id = "toast"; document.body.appendChild(t); }
@@ -109,6 +111,7 @@ function finalizarCompra() {
 }
 
 /* ---------- Cardápio ---------- */
+
 function desenharCardapio() {
   const menu = $("menu");
   if (!menu) return;
@@ -124,7 +127,8 @@ function desenharCardapio() {
     </article>`).join("");
 }
 
-/* ---------- Acessibilidade (preferências salvas) ---------- */
+/* ---------- Acessibilidade ---------- */
+
 let prefs = lerDado("acc", { fonte: 100, ativos: [] });
 
 function salvarPrefs() { guardarDado("acc", prefs); }
@@ -159,6 +163,7 @@ function restaurar() {
 }
 
 /* ---------- Contato ---------- */
+
 function enviarContato(e) {
   e.preventDefault();
   e.target.reset();
@@ -166,6 +171,7 @@ function enviarContato(e) {
 }
 
 /* ---------- Início ---------- */
+
 document.addEventListener("DOMContentLoaded", () => {
   aplicarPrefs();
   atualizarContador();
