@@ -1,4 +1,3 @@
-# BunCake
 <div align="center">
 
 <img src="Imagens/LogoBunCake.png" alt="Logo da BunCake: coelho em estilo de confeitaria" width="140">
@@ -14,7 +13,7 @@
 ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=github&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
 
-🔗 **Site publicado:** [`https://<SEU-USUARIO>.github.io/<NOME-DO-REPOSITORIO>/`](https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/) *(substitua após publicar)*
+🔗 **Site publicado:** [`https://<SEU-USUARIO>.github.io/<NOME-DO-REPOSITORIO>/`](https://anaernandes08.github.io/BunCake/) *(substitua após publicar)*
 
 </div>
 
@@ -42,7 +41,6 @@
 12. [Testes de acessibilidade](#12-testes-de-acessibilidade)
 13. [Referências e materiais complementares](#13-referências-e-materiais-complementares)
 14. [Possíveis melhorias futuras](#14-possíveis-melhorias-futuras)
-15. [Autoria](#15-autoria)
 
 ---
 
@@ -57,7 +55,7 @@
 | **Tecnologias** | HTML, CSS e JavaScript (sem frameworks) |
 | **Site publicado** | `https://<SEU-USUARIO>.github.io/<NOME-DO-REPOSITORIO>/` *(preencher)* |
 
-A BunCake apresenta um cardápio de bolos de pote, um carrinho de compras de demonstração e um formulário de contato. Ela também reúne um painel de recursos de acessibilidade que o visitante pode ajustar de acordo com suas necessidades.
+A BunCake apresenta um cardápio de bolos de pote, um carrinho de compras de demonstração e um formulário de contato. Ela também reúne um painel de recursos de acessibilidade que o visitante pode ajustar e uma área de artigos educativos sobre acessibilidade na vida cotidiana.
 
 ---
 
@@ -71,16 +69,16 @@ O projeto relaciona três temas:
 - **Acessibilidade digital:** pessoas com baixa visão, daltonismo, dislexia, dificuldades motoras ou que usam tecnologias assistivas podem encontrar barreiras em sites mal projetados.
 - **Inclusão social:** um site acessível amplia quem pode comprar, ler e participar, e trata a acessibilidade como parte da qualidade do produto.
 
-Além da loja, a proposta prevê um espaço educativo com artigos sobre acessibilidade na vida cotidiana (veja a seção [7](#7-artigos-sobre-acessibilidade)).
+Além da loja, o site tem um espaço educativo com seis artigos sobre acessibilidade na vida cotidiana (veja a seção [7](#7-artigos-sobre-acessibilidade)).
 
 ### Requisitos acadêmicos e situação atual
 
 | Requisito | Situação |
 |---|---|
 | Utilizar HTML, CSS e JavaScript | ✅ Atendido |
-| Possuir ao menos cinco páginas interligadas | ⏳ **Em andamento** (3 páginas implementadas até o momento) |
-| Disponibilizar artigos e textos sobre acessibilidade | ⏳ **Pendente** (ainda não incluídos no projeto) |
-| Estar publicado em um serviço de hospedagem | ⏳ A preencher (instruções na seção [11](#11-hospedagem)) |
+| Possuir ao menos cinco páginas interligadas | ✅ Atendido (10 páginas interligadas) |
+| Disponibilizar artigos e textos sobre acessibilidade | ✅ Atendido (6 artigos, veja a seção 7) |
+| Estar publicado em um serviço de hospedagem | ⏳ A publicar no GitHub Pages (instruções na seção [11](#11-hospedagem)) |
 | Atender às recomendações de acessibilidade web | 🔄 Parcialmente implementado e ainda não auditado (veja as seções [6](#6-recursos-de-acessibilidade) e [12](#12-testes-de-acessibilidade)) |
 
 ---
@@ -96,9 +94,9 @@ Desenvolver um site de comércio eletrônico fictício que demonstre boas práti
 - Aplicar HTML semântico, CSS e JavaScript para construir uma loja virtual funcional de demonstração.
 - Oferecer ao usuário um painel para personalizar a leitura (fonte, contraste, espaçamento, cores).
 - Garantir navegação por teclado e indicação visível de foco.
-- Fornecer textos alternativos para as imagens e rótulos para os campos e botões.
+- Fornecer textos alternativos para as imagens, rótulos para os campos e botões e um link para pular ao conteúdo.
 - Tornar o layout adaptável a diferentes tamanhos de tela.
-- Disponibilizar conteúdo educativo sobre acessibilidade *(a implementar)*.
+- Disponibilizar conteúdo educativo sobre acessibilidade na vida cotidiana.
 - Documentar o processo de verificação de acessibilidade e as melhorias futuras.
 
 > 💡 **Por que interfaces acessíveis importam?** Segundo a Lei Brasileira de Inclusão (Lei nº 13.146/2015), a acessibilidade é um direito. Na prática, ela também melhora a experiência para todos, inclusive para quem usa o celular sob o sol ou está com a mão ocupada.
@@ -120,6 +118,12 @@ Lista das funcionalidades **efetivamente implementadas** nos arquivos do projeto
 - **Formulário de contato** com nome, e-mail e mensagem (campos obrigatórios) e aviso de envio. O envio é só uma simulação: nenhuma mensagem é transmitida.
 - **Avisos temporários** (toast) ao adicionar itens, finalizar a compra ou enviar uma mensagem.
 
+### 📚 Conteúdo educativo
+
+- **Página de artigos** com seis artigos sobre acessibilidade (veja a seção [7](#7-artigos-sobre-acessibilidade)).
+- Cada artigo tem **sumário com âncoras**, links "Voltar ao sumário" e uma lista de **fontes**.
+- O artigo sobre barreiras digitais traz uma **tabela** com legenda e cabeçalhos associados às células.
+
 ### ♿ Acessibilidade (painel na página inicial)
 
 - Aumentar e diminuir a fonte (de 80% a 150%), com indicação do valor atual.
@@ -130,7 +134,9 @@ Lista das funcionalidades **efetivamente implementadas** nos arquivos do projeto
 - Destaque de links (sublinhado e contorno).
 - Escala de cinza.
 - Botão "Restaurar padrão".
-- As preferências ficam salvas e são aplicadas nas demais páginas.
+- As preferências ficam salvas e são aplicadas nas demais páginas, inclusive nos artigos.
+- **Link "Pular para o conteúdo"**, visível ao receber o foco do teclado, em todas as páginas.
+- Avisos temporários anunciáveis por leitores de tela (`role="status"`).
 
 ---
 
@@ -141,11 +147,15 @@ Lista das funcionalidades **efetivamente implementadas** nos arquivos do projeto
 | **Home / Cardápio / Acessibilidade** | `index.html` | Apresentar o projeto, exibir os produtos e permitir a personalização da leitura | Texto de apresentação (site de teste), cardápio com 6 produtos, painel de acessibilidade com 7 recursos e botão de restauração |
 | **Carrinho** | `carrinho.html` | Mostrar os itens escolhidos | Lista de itens, ajuste de quantidades, total e finalização de compra de demonstração |
 | **Contato** | `contato.html` | Permitir o envio de mensagens | Formulário com validação básica dos campos obrigatórios e aviso de envio (simulado) |
-| *Artigos sobre acessibilidade* | *a definir* | *Conteúdo educativo* | ⏳ *Ainda não implementado* |
-| *Página(s) adicional(is)* | *a definir* | *Atingir o mínimo de cinco páginas* | ⏳ *Ainda não implementado* |
+| **Artigos** | `artigos.html` | Reunir o conteúdo educativo | Lista dos seis artigos com tema e resumo, e materiais de referência |
+| **Acessibilidade digital** | `acessibilidade-digital.html` | Explicar conceito, números, leis, WCAG e eMAG | Sumário com âncoras, fontes |
+| **Acessibilidade na vida cotidiana** | `vida-cotidiana.html` | Mostrar quem se beneficia da acessibilidade no dia a dia | Sumário com âncoras, fontes |
+| **Barreiras e tecnologias assistivas** | `barreiras-e-tecnologias-assistivas.html` | Apresentar as barreiras por perfil e os recursos de apoio | Tabela de barreiras, sumário, fontes |
+| **Daltonismo e cores** | `daltonismo-e-cores.html` | Explicar o daltonismo e o uso acessível de cor e contraste | Sumário com âncoras, fontes |
+| **Libras e inclusão de pessoas surdas** | `libras-e-surdez.html` | Tratar de surdez, Libras, legendas e transcrição | Sumário com âncoras, fontes |
+| **Inclusão no comércio eletrônico** | `comercio-eletronico-inclusivo.html` | Relacionar acessibilidade e lojas virtuais | Práticas, ferramentas, estudo de caso, fontes |
 
-A navegação usa os links do cabeçalho: **Home**, **Cardápio** e **Acessibilidade** (âncoras da página inicial), além dos botões **Carrinho** e **Contato**.
-
+A navegação principal usa os links do cabeçalho: **Home**, **Cardápio** e **Acessibilidade** (âncoras da página inicial), **Artigos**, além dos botões **Carrinho** e **Contato**. Os artigos são acessados pela página **Artigos**.
 ---
 
 ## 6. Recursos de acessibilidade
@@ -167,18 +177,19 @@ A navegação usa os links do cabeçalho: **Home**, **Cardápio** e **Acessibili
 | **Indicador visual de foco** | Links, botões e campos recebem um contorno dourado de 3 px ao ganhar foco (`:focus-visible`). | Mostrar onde está o foco do teclado | Pessoas que navegam por teclado | 2.4.7 Foco visível |
 | **Navegação por teclado** | Os controles são elementos nativos (`<a>`, `<button>`, `<input>`, `<textarea>`), focáveis e acionáveis pelo teclado. | Permitir o uso sem mouse | Pessoas com deficiência motora ou que usam leitor de tela | 2.1.1 Teclado |
 | **Textos alternativos** | As fotos dos bolos têm `alt` descritivo ("Bolo de pote …") e o logo tem `alt="Logo BunCake"`. As miniaturas do carrinho têm `alt` vazio por serem decorativas, já que o nome do item está ao lado. | Descrever o conteúdo visual | Pessoas cegas ou com baixa visão | 1.1.1 Conteúdo não textual |
-| **HTML semântico** | Uso de `header`, `nav`, `main`, `section`, `article`, `footer`, títulos (`h1`–`h3`) e `lang="pt-br"`. | Dar estrutura e permitir a navegação por regiões e títulos | Usuários de leitor de tela | 1.3.1 Informações e relações; 3.1.1 Idioma da página |
+| **HTML semântico** | Uso de `header`, `nav`, `main`, `section`, `article`, `footer`, `lang="pt-br"` e um único `h1` por página, com títulos em hierarquia (`h1`–`h3`). | Dar estrutura e permitir a navegação por regiões e títulos | Usuários de leitor de tela | 1.3.1 Informações e relações; 3.1.1 Idioma da página |
 | **Rótulos acessíveis (ARIA)** | Os botões de ícone/símbolo (A−, A+, −, +) e os campos do formulário têm `aria-label`. | Informar o propósito dos controles ao leitor de tela | Usuários de leitor de tela | 4.1.2 Nome, função, valor; 3.3.2 Rótulos ou instruções |
+| **Link para pular ao conteúdo** | Um link no início da página leva direto ao `main`, ficando visível quando recebe o foco. | Evitar repetir o menu a cada página visitada com o teclado | Pessoas que navegam por teclado ou leitor de tela | 2.4.1 Ignorar blocos |
+| **Avisos para leitores de tela** | O aviso temporário usa `role="status"`. | Anunciar confirmações (como "item adicionado") sem mover o foco | Usuários de leitor de tela | 4.1.3 Mensagens de status |
+| **Navegação nos artigos** | Sumário com âncoras e links "Voltar ao sumário" nos textos longos; tabela com `caption` e `scope`; links externos com texto descritivo. | Facilitar a leitura de conteúdos extensos | Pessoas que navegam por teclado ou leitor de tela | 2.4.4 Finalidade do link; 1.3.1 Informações e relações |
 | **Layout adaptável** | A página usa Flexbox (com quebra de linha), uma grade com `repeat(auto-fill, minmax())` e a meta tag `viewport`. | Permitir o uso em celulares e telas variadas | Usuários de dispositivos móveis | 1.4.10 Reflow *(a verificar)* |
 
 ### Recursos ainda não implementados
 
 | Recurso | Situação |
 |---|---|
-| **Libras (ex.: VLibras)** | ❌ Não implementado. Planejado como melhoria futura. |
+| **Libras (ex.: VLibras)** | ❌ O site não possui tradução para Libras. O tema é tratado em um artigo, e a integração é uma melhoria futura. |
 | **Adaptação específica para daltonismo** | ❌ Não há filtros ou paletas específicas por tipo de daltonismo. A escala de cinza e o destaque de links ajudam, mas não substituem essa adaptação. |
-| **Link "Pular para o conteúdo"** | ❌ Não implementado. |
-| **Região ao vivo (`aria-live`) nos avisos** | ❌ Os avisos temporários ainda não são anunciados automaticamente por leitores de tela. |
 | **Media queries específicas** | ❌ O layout é fluido, mas não há regras `@media` dedicadas. |
 | **Verificação de contraste** | ⏳ As cores da paleta ainda não tiveram a razão de contraste medida. |
 
@@ -186,20 +197,16 @@ A navegação usa os links do cabeçalho: **Home**, **Cardápio** e **Acessibili
 
 ## 7. Artigos sobre acessibilidade
 
-> ⏳ **Status:** os artigos ainda **não foram incluídos** no site. Esta seção deve ser atualizada quando o conteúdo for publicado.
+O site tem uma área educativa (`artigos.html`) com seis artigos, escritos com redação própria a partir dos materiais listados na seção [13](#13-referências-e-materiais-complementares). Todos têm sumário com âncoras, fontes ao final e um único `h1`.
 
-O requisito acadêmico pede textos sobre acessibilidade na vida cotidiana. Para guiar a produção, a tabela abaixo reúne os temas previstos e sua relevância social. Os títulos e o conteúdo dos artigos ainda precisam ser definidos pela equipe.
-
-| Tema previsto | Objetivo do artigo | Importância para a sociedade | Artigo / link |
+| Artigo | Tema | Objetivo | Importância para a sociedade |
 |---|---|---|---|
-| Acessibilidade digital | Explicar o que é e por que ela importa | Garante que a internet seja utilizável por todas as pessoas | *a preencher* |
-| Daltonismo e percepção das cores | Mostrar como o daltonismo afeta a leitura de interfaces | Evita que a cor seja a única forma de transmitir informação | *a preencher* |
-| Libras e inclusão de pessoas surdas | Apresentar a Libras e os desafios de comunicação | Reconhece a Libras como língua e amplia a comunicação | *a preencher* |
-| Tecnologias assistivas | Apresentar leitores de tela, ampliadores, teclados adaptados etc. | Promove autonomia e independência | *a preencher* |
-| Acessibilidade na vida cotidiana | Relacionar acessibilidade a situações do dia a dia | Mostra que ela beneficia toda a população | *a preencher* |
-| Barreiras enfrentadas por pessoas com deficiência | Identificar barreiras físicas, digitais e atitudinais | Gera empatia e ações para removê-las | *a preencher* |
-| Inclusão no comércio eletrônico | Discutir o impacto da acessibilidade nas compras online | Amplia o acesso ao consumo e o público atendido | *a preencher* |
-
+| [Acessibilidade digital: o que é e por que importa](acessibilidade-digital.html) | Acessibilidade digital | Apresentar o conceito, os números, as leis, as WCAG e o eMAG | Mostra que a internet precisa ser utilizável por todas as pessoas e que isso é um direito |
+| [Acessibilidade na vida cotidiana](vida-cotidiana.html) | Vida cotidiana | Relacionar a acessibilidade a situações do dia a dia e a quem se beneficia | Evidencia que ela ajuda toda a população, e não só pessoas com deficiência permanente |
+| [Barreiras digitais e tecnologias assistivas](barreiras-e-tecnologias-assistivas.html) | Barreiras e tecnologias assistivas | Mostrar barreiras por perfil e recursos como leitores de tela e linha braille | Gera empatia e orienta a remoção das barreiras |
+| [Daltonismo e percepção das cores](daltonismo-e-cores.html) | Daltonismo | Explicar o daltonismo e o uso acessível de cor e contraste | Evita que a cor seja a única forma de transmitir informação |
+| [Libras e inclusão de pessoas surdas](libras-e-surdez.html) | Libras e surdez | Tratar de perfis de pessoas surdas, legendas, transcrição e Libras | Reconhece a diversidade de comunicação das pessoas surdas |
+| [Inclusão no comércio eletrônico](comercio-eletronico-inclusivo.html) | Comércio eletrônico | Reunir práticas, ferramentas e um estudo de caso de acessibilidade | Amplia o acesso ao consumo e o público atendido pelas lojas |
 ---
 
 ## 8. Tecnologias utilizadas
@@ -223,14 +230,21 @@ O requisito acadêmico pede textos sobre acessibilidade na vida cotidiana. Para 
 
 ```text
 BunCake/
-├── index.html          # Página inicial: apresentação, cardápio e painel de acessibilidade
-├── carrinho.html       # Página do carrinho de compras
-├── contato.html        # Página com formulário de contato
-├── style.css           # Estilos, variáveis de cor e temas de acessibilidade
-├── script.js           # Produtos, carrinho, preferências de acessibilidade e formulário
-├── README.md           # Documentação do projeto
+├── index.html                              # Home, cardápio e painel de acessibilidade
+├── carrinho.html                           # Carrinho de compras
+├── contato.html                            # Formulário de contato
+├── artigos.html                            # Lista dos artigos
+├── acessibilidade-digital.html             # Artigo
+├── vida-cotidiana.html                     # Artigo
+├── barreiras-e-tecnologias-assistivas.html # Artigo
+├── daltonismo-e-cores.html                 # Artigo
+├── libras-e-surdez.html                    # Artigo
+├── comercio-eletronico-inclusivo.html      # Artigo
+├── style.css                               # Estilos, variáveis de cor e temas de acessibilidade
+├── script.js                               # Produtos, carrinho, preferências e formulário
+├── README.md                               # Documentação do projeto
 └── Imagens/
-    ├── LogoBunCake.png          # Logo da loja
+    ├── LogoBunCake.png                     # Logo da loja
     ├── bolo-ninho-coco.jpg
     ├── bolo-chocolate.jpg
     ├── bolo-maracuja.jpg
@@ -241,10 +255,10 @@ BunCake/
 
 | Item | Finalidade |
 |---|---|
+| Arquivos `.html` | Páginas da loja (`index`, `carrinho`, `contato`) e do conteúdo educativo (`artigos` e os seis artigos) |
 | `Imagens/` | Guarda o logo e as fotos dos produtos |
-| `style.css` | Reúne a identidade visual (paleta marrom, dourado e rosa) e as classes dos recursos de acessibilidade |
+| `style.css` | Reúne a identidade visual (paleta marrom, dourado e rosa), os estilos dos artigos e as classes dos recursos de acessibilidade |
 | `script.js` | A constante `PRODUTOS` define o cardápio. Para alterar nomes, preços ou descrições, basta editá-la |
-
 ---
 
 ## 10. Como executar o projeto localmente
@@ -368,6 +382,11 @@ O site é estático, então pode ser publicado gratuitamente no **GitHub Pages**
 | [MDN Web Docs – Acessibilidade](https://developer.mozilla.org/pt-BR/docs/Web/Accessibility) | Documentação técnica em português sobre práticas de acessibilidade em HTML, CSS, JavaScript e ARIA. |
 | [Lei Brasileira de Inclusão (Lei nº 13.146/2015)](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm) | Estatuto da Pessoa com Deficiência, que trata do direito à acessibilidade, inclusive digital. |
 | [WebAIM](https://webaim.org/) | Recursos e ferramentas práticas, como o verificador de contraste. |
+| [Governo Digital – Acessibilidade Digital](https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital) | Página do governo federal sobre o conceito, os objetivos e os benefícios da acessibilidade digital. |
+| [Alura – Acessibilidade digital: 7 dicas para conteúdos acessíveis](https://www.alura.com.br/artigos/acessibilidade-digital-criar-conteudos-acessiveis-aprenda-7-dicas) | Artigo com conceitos, legislação e dicas práticas, como descrição de imagens e legendas. |
+| [Perto Digital – As 5 principais ferramentas de acessibilidade para websites](https://www.pertodigital.com.br/blog/as-5-principais-ferramentas-de-acessibilidade-para-websites) | Artigo de blog de uma empresa do setor sobre tipos de deficiência e ferramentas para sites. |
+| Enap. *eMAG Conteudista – Módulo 1: Introdução* e *Módulo 2: Web Acessível* (2016) | Material de curso sobre barreiras, tecnologias assistivas e práticas de web acessível. |
+| LEUCK, Ágata. *Acessibilidade em Sites e Aplicações Web: Estudo de Caso do Portal da UFRGS* (UFRGS, 2025) | Monografia que avalia o portal da UFRGS com a metodologia WCAG-EM. |
 
 > 🔎 Os links podem mudar com o tempo. Confira se continuam ativos antes de entregar o trabalho.
 
@@ -377,21 +396,18 @@ O site é estático, então pode ser publicado gratuitamente no **GitHub Pages**
 
 **Requisitos acadêmicos pendentes**
 
-- [ ] Criar as páginas de artigos sobre acessibilidade e atingir o mínimo de cinco páginas interligadas.
 - [ ] Publicar o site no GitHub Pages e atualizar o link neste README.
 - [ ] Realizar e documentar os testes de acessibilidade (seção 12).
 
 **Acessibilidade**
 
 - [ ] Integrar o **VLibras** para tradução em Libras.
-- [ ] Adicionar um link "Pular para o conteúdo principal".
-- [ ] Anunciar os avisos temporários com `aria-live` ou `role="status"`.
-- [ ] Revisar a hierarquia de títulos (hoje o nome da loja no cabeçalho usa `h1`, assim como a apresentação da página inicial).
 - [ ] Medir e ajustar o contraste da paleta de cores.
 - [ ] Oferecer paletas específicas para os tipos de daltonismo.
 - [ ] Adicionar `@media` queries e um menu adaptado para telas pequenas.
 - [ ] Respeitar as preferências do sistema (`prefers-color-scheme`, `prefers-reduced-motion`).
 - [ ] Adicionar um recurso de leitura em voz alta.
+- [ ] Incluir transcrições, legendas e audiodescrição caso o site passe a ter vídeos ou áudios.
 
 **Loja**
 
@@ -400,26 +416,6 @@ O site é estático, então pode ser publicado gratuitamente no **GitHub Pages**
 - [ ] Criar uma página de produto com mais detalhes.
 - [ ] Integrar o formulário de contato a um serviço de envio de e-mails.
 - [ ] Simular etapas de checkout (endereço e pagamento fictícios).
-
----
-
-## 15. Autoria
-
-| Campo | Informação |
-|---|---|
-| **Projeto** | BunCake |
-| **Curso** | Engenharia de Software |
-| **Instituição de ensino** | *[preencher]* |
-| **Disciplina / Professor(a)** | *[preencher]* |
-| **Período / Ano** | *[preencher]* |
-
-**Desenvolvedores**
-
-| Nome | GitHub |
-|---|---|
-| *[Nome completo]* | [@usuario](https://github.com/usuario) |
-| *[Nome completo]* | [@usuario](https://github.com/usuario) |
-
 ---
 
 <div align="center">
