@@ -13,7 +13,7 @@
 ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=github&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
 
-🔗 **Site publicado:** [`https://<SEU-USUARIO>.github.io/<NOME-DO-REPOSITORIO>/`](https://anaernandes08.github.io/BunCake/) *(substitua após publicar)*
+🔗 **Site publicado:** [`https://anaernandes08.github.io/BunCake/`](https://anaernandes08.github.io/BunCake/)
 
 </div>
 
